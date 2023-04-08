@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { selectedFilters } from '../state'
+    import { selectedFilters } from '@store/state'
     import type { User } from '../types'
 
     export let users: User[]
@@ -19,7 +19,7 @@
     <summary aria-haspopup="listbox">Eye color</summary>
     <ul role="listbox">
         {#each filters as filter}
-            <li on:click={updateSelection(filter)}>{filter}</li>
+            <li on:click={updateSelection(filter)} on:keypress>{filter}</li>
         {/each}
     </ul>
 </details>

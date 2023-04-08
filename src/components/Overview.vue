@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useStore } from '@nanostores/vue'
-import { selectedFilters } from '../state'
+import { selectedFilters } from '@store/state'
 
 const $selectedColors = useStore(selectedFilters)
 </script>
@@ -15,7 +15,7 @@ const $selectedColors = useStore(selectedFilters)
                         : $selectedColors.join(', ')
                 }}
             </h3>
-            <h2>Applied eye color filters</h2>
+            <h2>applied to the table</h2>
         </hgroup>
     </article>
 </template>

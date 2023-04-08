@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { selectedFilters } from '../state'
+    import { selectedFilters } from '@store/state'
     import type { User } from '../types'
 
     export let users: User[]

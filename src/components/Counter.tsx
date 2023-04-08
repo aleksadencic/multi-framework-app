@@ -1,6 +1,6 @@
 
 import { useStore } from '@nanostores/react'
-import { selectedFilters } from '../state'
+import { selectedFilters } from '@store/state'
 
 const Counter = () => {
     const filters = useStore(selectedFilters)
