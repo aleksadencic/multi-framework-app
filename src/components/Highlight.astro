@@ -1,0 +1,54 @@
+---
+interface Props {
+    react?: boolean
+    svelte?: boolean
+    vue?: boolean
+    astro?: boolean
+}
+
+const { react, svelte, vue, astro } = Astro.props
+
+const highlightColors = {
+    react: 'blue',
+    svelte: 'orangered',
+    vue: 'green',
+    astro: 'whitesmoke',
+} as any
+
+const frameworkName = Object.keys(Astro.props)[0]
+const highlightColor = highlightColors[frameworkName]
+---
+
+<!-- If `react` is truthy, class will be "box react". -->
+<div class:list={['box', { react, svelte, vue, astro }]}>
+    <p class="title">{frameworkName}</p>
+    <div class="wrap">
+        <slot />
+    </div>
+</div>
+
+<style define:vars={{ highlightColor }}>
+    .box {
+        border: 2px solid yellow;
+        margin: 10px;
+    }
+    .wrap {
+        padding: 10px;
+    }
+    .title {
+        background: var(--highlightColor);
+        padding: 0 10px;
+    }
+    .react {
+        border-color: blue;
+    }
+    .svelte {
+        border-color: orangered;
+    }
+    .vue {
+        border-color: green;
+    }
+    .astro {
+        border-color: whitesmoke;
+    }
+</style>

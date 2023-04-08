@@ -1,35 +1,10 @@
-# Astro Starter Kit: Basics
+# Multi-Framework App
 
-```
-npm create astro@latest -- --template basics
-```
+Demo app for conference talk [Age of Multi-Framework frontends](https://speakerdeck.com/marsicdev/age-of-multi-framework-frontends)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
+> Multi-framework Frontend allows developers to choose from a variety of frameworks to build web applications, leading to a more flexible and modular approach. This talk explores the benefits and challenges of this approach, including strategies for maintaining code quality and consistency across projects. We'll discuss how to leverage the strengths of multiple frameworks to create innovative solutions and the importance of staying up-to-date with the latest trends and best practices. Learn how to thrive in the Age of Multi-Framework Frontends.
 
 ## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 

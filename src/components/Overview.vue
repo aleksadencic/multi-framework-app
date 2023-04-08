@@ -1,0 +1,21 @@
+<script setup lang="ts">
+import { useStore } from '@nanostores/vue'
+import { selectedFilters } from '../state'
+
+const $selectedColors = useStore(selectedFilters)
+</script>
+
+<template>
+    <article>
+        <hgroup>
+            <h3>
+                {{
+                    $selectedColors.length === 0
+                        ? 'No filters'
+                        : $selectedColors.join(', ')
+                }}
+            </h3>
+            <h2>Applied eye color filters</h2>
+        </hgroup>
+    </article>
+</template>
