@@ -16,7 +16,7 @@
         </tr>
     </thead>
     <tbody>
-        {#each users.filter( (user) => $selectedFilters.includes(user.eyeColor.toLowerCase()) ) as user (user.id)}
+        {#each users.filter( (user) => $selectedFilters.includes(user.eyeColor.toLowerCase()) ) as user}
             <tr>
                 <th scope="row">{user.id}</th>
                 <td>{user.firstName}</td>

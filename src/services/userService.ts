@@ -1,15 +1,15 @@
-import type { User, UserResponse } from '../types'
-import { API } from './API'
+import type { User, UserResponse } from "../types";
+import { API } from "./API";
 
 class UserService {
-    private readonly endpoint = {
-        users: '/users',
-    }
+  private readonly endpoint = {
+    users: "/users",
+  };
 
-    async fetchUsers(): Promise<User[]> {
-        const { data: res } = await API.get<UserResponse>(this.endpoint.users)
-        return res.users
-    }
+  async fetchUsers(): Promise<User[]> {
+    const { data: res } = await API.get<UserResponse>(this.endpoint.users);
+    return res.users;
+  }
 }
 
-export const userService = new UserService()
+export const userService = new UserService();

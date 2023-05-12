@@ -1,6 +1,6 @@
-import axios from 'axios'
+import axios from "axios";
 
 export const API = axios.create({
-    baseURL: 'https://dummyjson.com',
-    timeout: 30000,
-})
+  baseURL: "https://dummyjson.com",
+  timeout: 30000,
+});
